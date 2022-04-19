@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+		The head section contains important meta information about the web page.
+
+		The viewport meta tag allows the web page to adjust to the width of the device
+		on which the page is displayed (computer screen, table, phone).
+
+		The description and keywords meta tags provide information for browser search engines.
+
+		The link to the normalize.min.css file provides better consistancy when the page
+		is viewed on different browsers.
+
+		Revision: 00
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Michael Rafferty Portfolio Web Site Assignment at Thinkful">
+	<meta name="keywords" content="Thinkful, Rafferty, Portfolio">
+	<title>Michael Rafferty Portfolio Web Site Assignment at Thinkful</title>
+	<link
+	    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+	    rel="stylesheet"
+	    type="text/css"
+  	/>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!--
+		The body is the main content of the web page.
+
+		The header (which is different from the <head>) contains the page header for the web page
+-->
+
+<body>
+	<header>
+		<h1>Michael Rafferty</h1>
+		<h3>Thinkful Student</h3>
+	</header>
+
+<!--
+		The nav section contains the navigational links for the web page
+-->
+
+	<div class="centered">
+		<nav>
+			<a href="#introduction" class="btn">Introduction</a>
+			<a href="#about-me" class="btn">About Me</a>
+			<a href="#contact" class="btn">Contact</a>
+		</nav>
+	</div>
+
+	<main>
+
+<!--
+		The first article in the main is the introduction
+-->
+
+		<article id="introduction">
+		<h2>Introduction</h2>
+		<div class="image-container">
+			<div class="image-content">
+				<img src="images/me-photo.jpg" alt="Picture of Michael Rafferty" width="100">
+			</div>
+			<div class="text-content">
+				<p>
+					My name is Michael Rafferty and I am enrolled in a Software Engineering Certification program at <strong>Thinkful</strong>.
+					I had not envisioned going back to school because it seemed cost prohibitive (isn't everything nowadays).
+					A new benefit from my employer made it possible to take advantage of this opportunity, for which I am quite grateful.
+					This Portfolio page is a project for my program. It might evolve over time. We will see.
+				</p>
+
+				<p>
+					Why did decide to enroll in the Software Engineering Certification program? I had been a coder for many years and due to changing job responsibilities
+					I have not had much opportunity to code for many years. The technology progressed but my skills have not kept pace. This seemed the best way to get back
+					into coding. I am looking forward to coding on a regular basis again.
+				</p>
+			</div>
+		</div>
+		</article>
+
+		<hr>
+
+<!--
+		The second article in the main is about me
+-->
+
+		<article id="about-me">
+		<h2>About Me</h2>
+		<p>
+			I live in Huntsville, Alabama: <strong>the Rocket City</strong>. Why is Huntsville called the Rocket city? There are several reasons:
+		</p>
+		<ul>
+			<li>
+				Dr. Wernher von Braun and his team set up their development facilities in Huntsville, Alabama.
+			</li>
+			<li>
+				Huntsville, Alabama is where rockets were developed that put men on the moon.
+			</li>
+			<li>
+				Huntsville, Alabama is the home of the <a href="https://www.rocketcenter.com/" target="_blank">U.S. Space &amp; Rocket Center; the largest space museum in the world</a>.
+			</li>
+		</ul>
+
+		<p>
+			When I am not working or studying, I spend time with <strong>my family</strong> and <em>my parish family at <a href="https://holyspirithsv.com/" target="_blank">Holy Spirit Catholic Church</a> in Huntsville</em>.
+		</p>
+
+		<p>
+			I am involved in several things at church:<br>
+			<ol>
+				<li>
+					Singing in the Chancel Choir
+				</li>
+				<li>
+					Singing at funerals
+				</li>
+				<li>
+					Knights of Columbus Council 764
+				</li>
+				<li>
+					Knights of Columbus Assembly 4
+				</li>
+			</ol>
+		</article>
+
+		<hr>
+
+<!--
+		The third article in the main is contact information
+-->
+
+		<article id="contact">
+		<h2>Contact</h2>
+				<p>
+					I can be reached at work: <a href = "mailto:Michael.Rafferty@macys.com">Mike Rafferty</a>
+				</p>
+		</article>
+
+	</main>
+	<footer>
+		&copy; Copyright, 2022
+	</footer>
+
+	<script src="script.js">
+	</script>
+</body>
+
+</html>

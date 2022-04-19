@@ -1,0 +1,204 @@
+/* -----------------------------------------------------------------------------------------------
+   Cascading style sheet (style.css) for Portfolio web site assignment in Thinkful
+   This is an external style sheet referenced in the HTML code (index.html) file.
+   
+   The intent is to present the page in black white and grays as much as possible.
+   I definitely had to research some of the CSS style commands and options to get the effect
+   that I was looking for.
+   
+   Revision: 00
+----------------------------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------------------------
+   In the style for the body, I want to set up the basic default style information for the
+   web page. This ensures that everything is basically covered.
+----------------------------------------------------------------------------------------------- */
+
+body {
+	background-color: #e0e0e0;
+
+	font-family: "Arial", "Verdana", "Helvetica", Sans-Serif;
+	font-size: 12px;
+	color: black;
+	text-align: left;
+	width: 60%;
+	margin: 0px;
+}
+
+/* -----------------------------------------------------------------------------------------------
+   Style the header, The image was created in PhotoShop and represents the Doppler effect.
+   The image was a bit too much and had to be softened, Hence the use of the pseudo style
+----------------------------------------------------------------------------------------------- */
+
+body header {
+	height: 120px;
+	border: 2px black solid;
+	background-image: url(images/gradiantbackground.jpg);
+	box-sizing: border-box;
+	margin: auto;
+}
+
+body header::before {
+	filter: blur(5px) saturation(50%) opacity(50%);
+}
+
+body header h1 {
+	font-size: 42px;
+	color: black;
+	text-align: center;
+	line-height: 24px;
+}
+
+body header h3 {
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	
+}
+
+/* -----------------------------------------------------------------------------------------------
+   Style the navigation links within the page to look like buttons.
+   The buttons are intended to look like buttone and not traditional links.
+   Note that the height and border radius are equal to completely round the end of the buttons.
+----------------------------------------------------------------------------------------------- */
+
+.btn {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	margin: 10px;
+	padding: 6px 12px;
+	border: 2px solid black;
+	height: 16px;
+	border-radius: 16px;
+	color: black;
+	background-color: #d0d0d0;
+	width:100px;
+}
+
+nav {
+	width: 60%;
+	padding: 10px;
+	margin: auto;
+}
+
+div.centered{
+	margin: auto;
+}
+
+/* -----------------------------------------------------------------------------------------------
+   Style the articles, the main content of the web page
+----------------------------------------------------------------------------------------------- */
+
+article {
+	width: 100%;
+	padding: 20px;
+}
+
+article p {
+	text-align: left;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+article li {
+	text-align: left;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+/* -----------------------------------------------------------------------------------------------
+   I wanted to float the text around the image. I could have done it with a table (I actually
+   know how to do that) but it seemed better to do it with CSS (which I have not learned yet) 
+   The next 4 entries come from https://www.w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html
+----------------------------------------------------------------------------------------------- */
+
+div.image-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.image-content {
+	flex-basis: 40%
+}
+
+div.text-content {
+	font-size: 20px;
+	padding-left: 20px;
+}
+
+div.img {
+  max-width: 100%
+}
+
+/* -----------------------------------------------------------------------------------------------
+   In the style for the links in the nav section, I want to set up the basic default style
+   information for the hyperlinks used for internal navigation on the page. The order of the
+   links is critical. They should always be in the following order:
+   (1) link
+   (2) visited
+   (3) hover
+   (4) active
+   
+   Most of the styling of the links has been removed so that the links in the nav section
+   look exactly like (or pretty close) traditional buttons and not links.
+----------------------------------------------------------------------------------------------- */
+
+nav a:link {
+	cursor: auto;
+}
+
+nav a:visited {
+	cursor: auto;
+}
+
+nav a:hover {
+	color: white;
+	cursor: pointer;
+}
+
+nav a:active {
+	color: white;
+	cursor: pointer;
+}
+
+/* -----------------------------------------------------------------------------------------------
+   In the style for the links in the article sections, I want to set up the basic default style
+   information for the hyperlinks used to navigate to other pages. Hyperlinks should look like
+   hyperlinks. The order of the links is critical. They should always be in the following order:
+   (1) link
+   (2) visited
+   (3) hover
+   (4) active
+   
+   Most of the styling of the links has been removed so that the links in the nav section
+   look exactly like (or pretty close) traditional buttons and not links.
+----------------------------------------------------------------------------------------------- */
+
+article a:link {
+	color: #0000EE;
+	cursor: auto;
+	text-decoration: underline;
+}
+
+article a:visited {
+	color: #551A8B;
+	cursor: auto;
+	text-decoration: underline;
+}
+
+article a:hover {
+	color: red;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+article a:red {
+	color: white;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
