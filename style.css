@@ -93,8 +93,9 @@ div.centered{
 ----------------------------------------------------------------------------------------------- */
 
 article {
-	width: 100%;
+	width: 70%;
 	padding: 20px;
+	margin-left: 10%;
 }
 
 article p {
@@ -202,3 +203,18 @@ article a:red {
 	text-decoration: underline;
 }
 
+.contact-information::before {
+	content: "I can be reached at:";
+	text-align: left;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.contact-information::after {
+	content: url("images/horizontal-rule.gif");
+}
+
+.contact-information ul {
+	margin-left: 10%;
+}
